@@ -1,0 +1,130 @@
+@media screen and (max-width: 768px) {
+  body {
+    background-color: tomato;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-description-container {
+    text-align: center;
+  }
+
+  .about-description-container h2 {
+    font-size: 27px;
+  }
+
+  .about-description-container p,
+  .second-desc-para,
+  .about-details p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-details {
+    background-color: black;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .about-details div {
+    width: 100%;
+    border: 2px solid red;
+  }
+
+  .skills-container,
+  .skill-card,
+  .projects-container,
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    background-color: green;
+  }
+
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-description-container {
+    text-align: center;
+  }
+
+  .about-description-container h2 {
+    font-size: 27px;
+  }
+
+  .about-description-container p,
+  .second-desc-para,
+  .about-details p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills-heading-desc p {
+    text-align: center;
+  }
+
+  .skills-container,
+  .skill-card,
+  .projects-container,
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projects-heading-desc p {
+    text-align: center;
+  }
+
+  .resume-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .contact-container,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .send-message {
+    width: 100%;
+  }
+
+  .contact-form {
+    padding: 0;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: blue;
+  }
+}
