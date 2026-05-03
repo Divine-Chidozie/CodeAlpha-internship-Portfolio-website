@@ -1,9 +1,5 @@
 @media screen and (max-width: 768px) {
-  body {
-    background-color: tomato;
-  }
-
-  .about-container {
+  s */ .about-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,8 +21,8 @@
   }
 
   .about-details {
-    background-color: black;
-    color: wheat;
+    /* background-color: black; */
+    /* color: wheat; */
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -34,7 +30,7 @@
 
   .about-details div {
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
 
   .skills-container,
@@ -50,8 +46,61 @@
 }
 
 @media screen and (max-width: 600px) {
-  body {
+  /* body {
     background-color: green;
+  } */
+
+  .header-logo {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .hamburger-menu {
+    width: 25px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 400px;
+    cursor: pointer;
+  }
+
+  .hamburger-menu span {
+    display: block;
+    height: 4px;
+    background-color: oklch(49.6% 0.265 301.924);
+    border-radius: 2px;
+  }
+
+  .mobile-menu {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #ffffff;
+    position: absolute; /* for overlay effect*/
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+  .mobile-menu li {
+    padding: 10px;
+  }
+
+  .mobile-menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 15px;
+    margin: 0 5px;
+  }
+  /* Show menu when active */
+  .mobile-menu.active {
+    display: block;
   }
 
   .about-container {
@@ -64,8 +113,9 @@
     text-align: center;
   }
 
-  .about-description-container h2 {
-    font-size: 27px;
+  .about-description-container h2,
+  .about-second-heading {
+    font-size: 22px !important;
   }
 
   .about-description-container p,

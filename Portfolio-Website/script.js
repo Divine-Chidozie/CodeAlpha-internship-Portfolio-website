@@ -2,6 +2,10 @@ const navHeader = document.getElementById("nav-header");
 const navLogo = document.getElementById("nav-logo");
 const navListItem = document.querySelectorAll(".nav-list-item");
 
+const menu = document.getElementById("menu");
+const menuSpan = document.querySelectorAll(".menu-span");
+const mobileMenu = document.getElementById("mobileMenu");
+
 function navHeaderScroll() {
   if (window.scrollY > 50) {
     navHeader.style.backgroundColor = "oklch(49.6% 0.265 301.924)";
@@ -11,6 +15,7 @@ function navHeaderScroll() {
     navListItem.forEach(function (item) {
       item.style.color = "white";
     });
+    menu.style.backgroundColor = "white";
   } else {
     navHeader.style.backgroundColor = "";
     navLogo.style.color = "";
@@ -20,8 +25,11 @@ function navHeaderScroll() {
     });
   }
 }
-
 window.addEventListener("scroll", navHeaderScroll);
+
+menu.addEventListener("click", function () {
+  mobileMenu.classList.toggle("active");
+});
 
 const downloadResume = document.getElementById("download-resume");
 const viewResume = document.getElementById("view-resume");
@@ -54,12 +62,3 @@ resumeButton.forEach((resume) => {
 //     });
 //   });
 // }
-
-const menu = document.getElementById("menu");
-const menuSpan = document.querySelectorAll(".menu-span");
-const mobileMenu = document.getElementById("mobileMenu");
-// const toggleButton = document.querySelector("#toggle-btn");
-
-menu.addEventListener("click", function () {
-  mobileMenu.classList.toggle("active");
-});
