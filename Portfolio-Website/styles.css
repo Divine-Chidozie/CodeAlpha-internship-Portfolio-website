@@ -396,3 +396,8 @@ textarea {
   font-size: 15px;
   cursor: pointer;
 }
+
+.active {
+  background-color: red;
+  display: flex;
+}

@@ -1,25 +1,31 @@
 const navHeader = document.getElementById("nav-header");
 const navLogo = document.getElementById("nav-logo");
+const headerMenu = document.getElementById("headerMenu");
+
 const navListItem = document.querySelectorAll(".nav-list-item");
 
 const menu = document.getElementById("menu");
 const menuSpan = document.querySelectorAll(".menu-span");
 const mobileMenu = document.getElementById("mobileMenu");
 
+const headerMenuBackgroundColor = "oklch(49.6% 0.265 301.924)";
+const navLogoColor = "white";
+const headerMenuTransition = "0.3s ease-in";
+const navListItemColor = "white";
+
 function navHeaderScroll() {
   if (window.scrollY > 50) {
-    navHeader.style.backgroundColor = "oklch(49.6% 0.265 301.924)";
-    navLogo.style.color = "white";
-    navHeader.style.transition = "0.3s ease-in";
-
+    headerMenu.style.backgroundColor = `${headerMenuBackgroundColor}`;
+    navLogo.style.color = `${navLogoColor}`;
+    headerMenu.style.transition = `${headerMenuTransition}`;
     navListItem.forEach(function (item) {
       item.style.color = "white";
     });
-    menu.style.backgroundColor = "white";
+    menu.style.backgroundColor = `${navListItemColor}`;
   } else {
-    navHeader.style.backgroundColor = "";
+    headerMenu.style.backgroundColor = "";
     navLogo.style.color = "";
-    navHeader.style.transition = "0.3s ease-in";
+    headerMenu.style.transition = "0.3s ease-in";
     navListItem.forEach(function (item) {
       item.style.color = "";
     });
