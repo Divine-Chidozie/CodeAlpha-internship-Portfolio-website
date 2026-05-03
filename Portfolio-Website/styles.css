@@ -71,12 +71,18 @@ header {
   font-size: 16px;
 }
 
+.header-nav ul li a:hover {
+  color: oklch(49.6% 0.265 301.924);
+  transition: 0.3s ease-in;
+}
+
 .hamburger-menu {
   display: none;
+  /* z-index: 2000; */
 }
 
 .mobile-menu {
-  display: none !important;
+  display: none;
 }
 
 main {
@@ -313,6 +319,18 @@ main {
   color: #fff;
 }
 
+.primary-resume:hover,
+.send-message:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(147, 24, 250),
+    rgb(79, 58, 246),
+    rgb(0, 171, 223)
+  );
+  transition: 0.3s ease-in-out;
+  border-radius: 40px;
+}
+
 .secondary-resume {
   background: linear-gradient(
     90deg,
@@ -321,6 +339,12 @@ main {
     rgb(0, 171, 223)
   );
   color: #fff;
+}
+
+.secondary-resume:hover {
+  background: white;
+  color: #303030;
+  transition: 0.3s ease-in-out;
 }
 
 footer {
@@ -395,9 +419,4 @@ textarea {
   border: 2px solid oklch(49.6% 0.265 301.924);
   font-size: 15px;
   cursor: pointer;
-}
-
-.active {
-  background-color: red;
-  display: flex;
 }
