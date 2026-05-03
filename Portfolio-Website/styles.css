@@ -36,7 +36,6 @@ header {
 }
 
 .header-container {
-  /* background-color: green; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -70,6 +69,14 @@ header {
   text-decoration: none;
   color: #111827;
   font-size: 16px;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+.mobile-menu {
+  display: none !important;
 }
 
 main {
@@ -194,10 +201,11 @@ main {
 }
 
 .skill-card {
-  box-shadow: 0px 0px 4px blue;
+  box-shadow: 0px 0px 5px whitesmoke;
+  border: 2px solid whitesmoke;
   flex: 1;
   flex-basis: 200;
-  padding: 10px;
+  padding: 20px;
   cursor: pointer;
 }
 
@@ -245,7 +253,9 @@ main {
   flex-basis: 200;
   gap: 5px;
   padding: 25px;
-  box-shadow: 0px 0px 5px green;
+  /* box-shadow: 0px 0px 5px green; */
+  box-shadow: 0px 0px 25px whitesmoke;
+  border: 2px solid whitesmoke;
 }
 
 .project-card p {
