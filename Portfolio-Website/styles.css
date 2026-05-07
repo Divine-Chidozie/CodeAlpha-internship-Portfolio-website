@@ -216,11 +216,9 @@ main {
 }
 
 .skill-card:hover {
+  background-color: oklch(49.6% 0.265 301.924);
   transition: 0.3s ease-in;
-  background-color: red;
   color: white;
-  border-color: red;
-  border-radius: 10px;
 }
 
 .skill-card h3 {
@@ -264,6 +262,10 @@ main {
   border: 2px solid whitesmoke;
 }
 
+.project-card h3 {
+  font-size: 15px;
+}
+
 .project-card p {
   font-size: 14px;
   /* max-width: 500px; */
@@ -273,6 +275,14 @@ main {
   text-decoration: none;
   font-size: 13px;
   color: blue;
+}
+
+.live-demo,
+.github {
+  background-color: oklch(49.6% 0.265 301.924);
+  padding: 4px 10px;
+  color: white !important;
+  border-radius: 2px;
 }
 
 .resume-section {
@@ -319,16 +329,14 @@ main {
   color: #fff;
 }
 
-.primary-resume:hover,
-.send-message:hover {
+.primary-resume:hover {
   background: linear-gradient(
     90deg,
     rgb(147, 24, 250),
     rgb(79, 58, 246),
     rgb(0, 171, 223)
   );
-  transition: 0.3s ease-in-out;
-  border-radius: 40px;
+  transition: 0.3s ease-in;
 }
 
 .secondary-resume {
@@ -416,7 +424,21 @@ textarea {
   padding: 10px 20px;
   outline: none;
   color: whitesmoke;
-  border: 2px solid oklch(49.6% 0.265 301.924);
+  border: 1px solid oklch(49.6% 0.265 301.924);
   font-size: 15px;
   cursor: pointer;
+}
+
+.send-message:hover {
+  background-color: oklch(51.021% 0.25954 304.055 / 0.842);
+  border: 1px solid oklch(51.021% 0.25954 304.055 / 0.842);
+  transition: 0.3s ease-ins;
+}
+
+.error {
+  color: rgb(227, 41, 41);
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 1px;
 }

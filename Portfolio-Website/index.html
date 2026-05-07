@@ -75,7 +75,7 @@
               </p>
             </div>
 
-            <div class="about-heading-container">
+            <div class="about-heading-container img">
               <img src="images/Divine-Chidozie.png" alt="Image of Me" />
             </div>
           </div>
@@ -133,6 +133,11 @@
             </div>
 
             <div class="skill-card">
+              <h3>React</h3>
+              <p>DOM manipulation, interactivity, and dynamic web features.</p>
+            </div>
+
+            <div class="skill-card">
               <h3>Responsive Design</h3>
               <p>Mobile-first layouts that work across all screen sizes.</p>
             </div>
@@ -169,10 +174,12 @@
                 clean and responsive design.
               </p>
 
-              <p><strong>Tech Stack:</strong> HTML, CSS</p>
+              <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
               <div class="project-links">
-                <a class="live-demo" href="#">Live Demo</a>
-                <a class="github" href="#">GitHub</a>
+                <a id="live-demo-link-1" class="live-demo" href="#"
+                  >Live Demo</a
+                >
+                <a id="github-link-1" class="github" href="#">GitHub</a>
               </div>
             </div>
 
@@ -186,8 +193,10 @@
               </p>
               <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
               <div class="project-links">
-                <a class="live-demo" href="#">Live Demo</a>
-                <a class="github" href="#">GitHub</a>
+                <a id="live-demo-link-2" class="live-demo" href="#"
+                  >Live Demo</a
+                >
+                <a id="github-link-2" class="github" href="#">GitHub</a>
               </div>
             </div>
 
@@ -222,11 +231,7 @@
           </p>
 
           <div class="resume-actions">
-            <a
-              href="#"
-              id="download-resume"
-              class="resume-button primary-resume"
-            >
+            <a href="#" class="resume-button primary-resume" download>
               Download Resume
             </a>
             <a href="#" id="view-resume" class="resume-button secondary-resume">
@@ -253,17 +258,26 @@
             <div class="contact-info">
               <h3>Get in Touch</h3>
 
-              <p><strong>Email:</strong> yourname@gmail.com</p>
-              <p><strong>Phone:</strong> +234 XXX XXX XXXX</p>
+              <p><strong>Email:</strong> igwedivine92@gmail.com</p>
+              <p><strong>Phone:</strong> +234 814 244 3836</p>
               <p><strong>Location:</strong> Lagos, Nigeria</p>
             </div>
           </div>
 
           <!-- Contact Form -->
-          <form class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" rows="2" required></textarea>
+          <form id="form" class="contact-form">
+            <input id="name-input" type="text" placeholder="Your Name" />
+            <span id="nameError" class="name-error error"></span>
+
+            <input id="email-input" type="email" placeholder="Your Email" />
+            <span id="emailError" class="email-error error"></span>
+
+            <textarea
+              id="textarea-input"
+              placeholder="Your Message"
+              rows="2"
+            ></textarea>
+            <span id="textareaError" class="textarea-error-error error"></span>
 
             <button class="send-message" type="submit">Send Message</button>
           </form>
