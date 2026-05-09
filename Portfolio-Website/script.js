@@ -13,13 +13,37 @@ const liveDemoLink2 = document.getElementById("live-demo-link-2");
 const githubLink1 = document.getElementById("github-link-1");
 const githubLink2 = document.getElementById("github-link-2");
 
-const liveLink = [liveDemoLink1, liveDemoLink2, githubLink1, githubLink2];
-liveLink.forEach((link) => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    alert("We are working on this feature, stay with us.");
-  });
-});
+// const liveLink = [liveDemoLink1, liveDemoLink2, githubLink1, githubLink2];
+// liveLink.forEach((link) => {
+//   link.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     alert("We are working on this feature, stay with us.");
+//   });
+// });
+
+const headerMenuBackgroundColor = "rgba(255, 255, 255, 0.3)";
+const headerMenuTransition = "0.3s ease-in";
+const navListItemColor = "white";
+
+function navHeaderScroll() {
+  if (window.scrollY > 50) {
+    headerMenu.style.backgroundColor = `${headerMenuBackgroundColor}`;
+    headerMenu.style.backdropFilter = "blur(10px)";
+    headerMenu.style.transition = `${headerMenuTransition}`;
+    navListItem.forEach(function (item) {
+      item.style.color = "black";
+    });
+    menu.style.backgroundColor = `${navListItemColor}`;
+  } else {
+    headerMenu.style.backgroundColor = "";
+    navLogo.style.color = "";
+    headerMenu.style.transition = "0.3s ease-in";
+    navListItem.forEach(function (item) {
+      item.style.color = "";
+    });
+  }
+}
+window.addEventListener("scroll", navHeaderScroll);
 
 // Form Input
 const form = document.getElementById("form");
@@ -98,28 +122,3 @@ const clearTextAreaError = () => {
 nameInput.addEventListener("input", clearNameError);
 emailInput.addEventListener("input", clearEmailError);
 textAreaInput.addEventListener("input", clearTextAreaError);
-
-const headerMenuBackgroundColor = "oklch(49.6% 0.265 301.924)";
-const navLogoColor = "white";
-const headerMenuTransition = "0.3s ease-in";
-const navListItemColor = "white";
-
-function navHeaderScroll() {
-  if (window.scrollY > 50) {
-    headerMenu.style.backgroundColor = `${headerMenuBackgroundColor}`;
-    navLogo.style.color = `${navLogoColor}`;
-    headerMenu.style.transition = `${headerMenuTransition}`;
-    navListItem.forEach(function (item) {
-      item.style.color = "white";
-    });
-    menu.style.backgroundColor = `${navListItemColor}`;
-  } else {
-    headerMenu.style.backgroundColor = "";
-    navLogo.style.color = "";
-    headerMenu.style.transition = "0.3s ease-in";
-    navListItem.forEach(function (item) {
-      item.style.color = "";
-    });
-  }
-}
-window.addEventListener("scroll", navHeaderScroll);

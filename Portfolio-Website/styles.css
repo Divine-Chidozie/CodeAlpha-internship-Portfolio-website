@@ -54,6 +54,11 @@ header {
   font-weight: 600 !important;
 }
 
+.header-logo img {
+  width: 30px;
+  border-radius: 50%;
+}
+
 .header-nav ul {
   display: flex;
   justify-content: center;
@@ -96,7 +101,8 @@ main {
   flex-wrap: wrap;
   padding: 25px;
   margin-bottom: 20px;
-  background: radial-gradient(circle, rgb(248, 248, 255), rgb(222, 205, 247));
+  /* background: radial-gradient(circle, rgb(248, 248, 255), rgb(222, 205, 247)); */
+  background-color: #f5f3ff;
 }
 
 .about-description-container {
@@ -116,7 +122,8 @@ main {
 }
 
 .inner-heading {
-  color: oklch(49.6% 0.265 301.924);
+  /* color: oklch(49.6% 0.265 301.924); */
+  color: #7c3aed;
 }
 
 .about-second-heading {
@@ -256,10 +263,16 @@ main {
   flex: 1;
   flex-basis: 200;
   gap: 5px;
-  padding: 25px;
-  /* box-shadow: 0px 0px 5px green; */
+  padding: 15px;
   box-shadow: 0px 0px 25px whitesmoke;
   border: 2px solid whitesmoke;
+}
+
+.project-img {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 6px;
+  margin-bottom: 10px;
 }
 
 .project-card h3 {
@@ -268,6 +281,7 @@ main {
 
 .project-card p {
   font-size: 14px;
+  margin: 2px 0;
   /* max-width: 500px; */
 }
 
@@ -279,7 +293,7 @@ main {
 
 .live-demo,
 .github {
-  background-color: oklch(49.6% 0.265 301.924);
+  background-color: #7c3aed;
   padding: 4px 10px;
   color: white !important;
   border-radius: 2px;
@@ -324,28 +338,17 @@ main {
 }
 
 .primary-resume {
-  /* background-color: rgb(37, 163, 37); */
-  background-color: oklch(49.6% 0.265 301.924);
   color: #fff;
+  background-color: #7c3aed;
 }
 
 .primary-resume:hover {
-  background: linear-gradient(
-    90deg,
-    rgb(147, 24, 250),
-    rgb(79, 58, 246),
-    rgb(0, 171, 223)
-  );
+  background-color: #7c5aed;
   transition: 0.3s ease-in;
 }
 
 .secondary-resume {
-  background: linear-gradient(
-    90deg,
-    rgb(147, 24, 250),
-    rgb(79, 58, 246),
-    rgb(0, 171, 223)
-  );
+  background-color: #111827;
   color: #fff;
 }
 
@@ -418,21 +421,21 @@ textarea {
 }
 
 .send-message {
-  background-color: oklch(49.6% 0.265 301.924);
+  background-color: #7c3aed;
   width: 80%;
   align-items: flex-start;
   padding: 10px 20px;
   outline: none;
   color: whitesmoke;
-  border: 1px solid oklch(49.6% 0.265 301.924);
+  border: 1px solid #7c3aed;
   font-size: 15px;
   cursor: pointer;
 }
 
 .send-message:hover {
-  background-color: oklch(51.021% 0.25954 304.055 / 0.842);
-  border: 1px solid oklch(51.021% 0.25954 304.055 / 0.842);
-  transition: 0.3s ease-ins;
+  background-color: #7c5ead;
+  border: 1px solid #7c5ead;
+  transition: 0.3s ease-in;
 }
 
 .error {
